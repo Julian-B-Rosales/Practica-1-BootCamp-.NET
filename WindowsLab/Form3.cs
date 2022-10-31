@@ -20,9 +20,18 @@ namespace WindowsLab
         private void btnMultiplicar_Click(object sender, EventArgs e)
         {
             int n = Convert.ToInt32(txtNumero.Text);
-            int aux;
 
+            string tabla = crearTabla(n);
+
+            
+            MessageBox.Show("Los resultados de la tabla son: \n" + tabla);
+
+        }
+
+        private string crearTabla(int n)
+        {
             string tabla = "";
+            int aux;
 
             for (int i = 0; i <= 12; i++)
             {
@@ -30,9 +39,7 @@ namespace WindowsLab
                 tabla += Convert.ToString(n) + " * " + Convert.ToString(i) + " = " + Convert.ToString(aux) + "\n";
             }
 
-            
-            MessageBox.Show("Los resultados de la tabla son: \n" + tabla);
-
-        }
+            return tabla;
+        } 
     }
 }

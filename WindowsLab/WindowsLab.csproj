@@ -95,6 +95,12 @@
     <Compile Include="frm2Vectores.Designer.cs">
       <DependentUpon>frm2Vectores.cs</DependentUpon>
     </Compile>
+    <Compile Include="frm3Vectores.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm3Vectores.Designer.cs">
+      <DependentUpon>frm3Vectores.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form1.resx">
@@ -120,6 +126,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frm2Vectores.resx">
       <DependentUpon>frm2Vectores.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm3Vectores.resx">
+      <DependentUpon>frm3Vectores.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

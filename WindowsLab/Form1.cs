@@ -21,10 +21,16 @@ namespace WindowsLab
         {
             decimal h = Convert.ToDecimal(txtAltura.Text);
             decimal b = Convert.ToDecimal(txtBase.Text);
-            decimal ans = b * h;
+            decimal ans = area(h, b);
 
             MessageBox.Show("El area del rectangulo es: " + ans);
 
         }
+
+        private decimal area(decimal h, decimal b)
+        {
+            return h * b;
+        }
+
     }
 }
